@@ -1,0 +1,51 @@
+<head> <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet"> 
+</head>
+<style>
+    body{
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        ". . top-right"
+        ". cen ."
+        "bottom . .";
+    }
+.top-right{
+    grid-area: top-right;
+    justify-self: end;
+
+}
+.bottom{
+    grid-area: bot;
+    align-self: start;
+}
+.center{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-area: cen;
+    align-self: center;
+    justify-self: center;
+}
+input{
+    margin: 20px;
+    
+}
+.a{
+    font-family: 'Space Mono', monospace;
+}
+</style>
+<body>
+    <div class="top-right">
+<p class="a">Gmail images</p>
+    </div>
+
+<div class="bottom"> 
+    <p>India</p>
+</div>
+    <div class="center">
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+        <input placeholder="search">
+        <p><button>google search</button> <button>I'm feeling lucky</button></p>
+    
+</div>
+</body>
